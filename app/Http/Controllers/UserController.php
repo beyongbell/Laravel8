@@ -8,6 +8,6 @@ class UserController extends Controller
 {
     public function index($name)
     {
-        return "Hello from User ". $name;
+        return view('user', ['name' => $name]);
     }
 }
