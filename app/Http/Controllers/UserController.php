@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function index($name)
+    public function index()
     {
-        return view('user', ['name' => $name]);
+        return view('user');
     }
 }
